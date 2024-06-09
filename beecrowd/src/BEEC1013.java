@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
-public class BEEC1004 {
+public class BEEC1013 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         int a = input.nextInt();
         int b = input.nextInt();
+        int c = input.nextInt();
 
-        int prod = a * b;
+        int greatest = Math.max(a, Math.max(b, c));
 
-        System.out.println("PROD = " + prod);
+        System.out.println(greatest + " eh o maior");
     }
 }

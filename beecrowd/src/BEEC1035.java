@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BEEC1007 {
+public class BEEC1035 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -9,8 +9,10 @@ public class BEEC1007 {
         int C = input.nextInt();
         int D = input.nextInt();
 
-        int difference = (A * B) - (C * D);
-
-        System.out.println("DIFERENCA = " + difference);
+        if (B > C && D > A && C + D > A + B && C > 0 && D > 0 && A % 2 == 0) {
+            System.out.println("Valores aceitos");
+        } else {
+            System.out.println("Valores nao aceitos");
+        }
     }
 }
